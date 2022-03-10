@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rock, Paper, Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- PLayer Scores -->
+        <div class="scores">
+            <p>
+                Computer : <span id="computer_score">0</span>
+            </p>
+            <p>
+                Player : <span id="player_score">0</span>
+            </p>
+        </div>
+
+        <!-- Choices -->
+        <div class="choices">
+            <button onclick="checker('rock')">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+            <button onclick="checker('paper')">
+                <i class="fa-regular fa-hand"></i>
+            </button>
+            <button onclick="checker('scissor')">
+                <i class="fa-regular fa-hand-scissors fa-rotate-90"></i>
+            </button>
+        </div>
+
+        <!-- Log -->
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
